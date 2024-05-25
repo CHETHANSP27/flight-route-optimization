@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AIRBUS</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="./static/style.css">
+</head>
+
+<body>
+  <div class="header">
+    <nav class="navbar">
+      <div class="container">
+        <input type="checkbox" name="bars" id="bars">
+        <div class="logo scroll-l">
+          <img src="./static/logo.png" height="30" alt="" srcset="">
+        </div>
+        <div class="navigation  scroll-t">
+          <a href="#" class="nav-link">Home</a>
+          <a href="#" class="nav-link">Services</a>
+          <a href="#" class="nav-link">Offers</a>
+          <a href="#" class="nav-link">About</a>
+          <a href="#" class="nav-link">Contact</a>
+
+        </div>
+
+        <div class="controls  scroll-r">
+          <label class="icon bars" for="bars" ><i class="fa fa-bars"></i></label>
+          <div class="icon"><i class="fa fa-search"></i></div>
+          <div class="icon"><i class="fa fa-user-alt"></i></div>
+          <div class="btn btn-signup">Sign Up</div>
+
+        </div>
+      </div>
+    </nav>
+
+    <div class="content">
+      <div class="head">
+        <h1>
+          AIRBUS
+        </h1>
+        <h5 class="subtitle">
+          We do the right to get best ROUTE to your destination
+        </h5>
+      </div>
+
+
+      <div class="booking-box">
+        <div class="form   scroll-b">
+          <div class="line">
+            <div class="box">
+              <label for="departure">Form</label>
+              <input type="text" id="departure" placeholder="departure..">
+            </div>
+            <div class="box">
+              <label for="arrival">to</label>
+              <input type="text" id="arrival" placeholder="arrival..">
+            </div>
+            <div class="box">
+              <label for="waypoints">Waypoints</label>
+              <input type="text" id="waypoints" placeholder="Waypoints (comma separated)..">
+          </div>
+          </div>
+          <div class="line">
+            <div class="box">
+              <label for="aircraft_model">Aircraft Model</label>
+              <input type="text" id="aircraft_model" placeholder="Aircraft Model.." required>
+            </div>
+            <div class="box">
+              <label for="fuel_price">Fuel Price</label>
+              <input type="number" step="0.01" id="fuel_price" placeholder="Fuel Price per Gallon.." required>
+            </div>
+          </div>
+          <div class="line-r">
+            <button id="search-btn" class="btn">find</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div id="map" style="height: 700px;"></div>
+  </div>
+
+
+  <section class="about" id="about">
+    <div class="container">
+      <div class="items">
+        <div class="item   scroll-l">
+          <div class="image">
+            <img src="./static/about.png" alt="" srcset="">
+          </div>
+        </div>
+        <div class="item   scroll-r">
+          <h2 class="title">Easy way to go to your next destination</h2>
+          <div class="desc">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia magni distinctio quisquam blanditiis,
+              facilis est consequatur expedita dolorem, nesciunt, optio illum maxime quo accusamus laudantium
+              repellendus? Labore iusto nisi iure.
+            </p>
+          </div>
+          <div class="list">
+            <ul>
+              <li>
+
+                <p>
+                  <i class="fa fa-angle-double-right"></i>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, voluptas nisi. Quibusdam, illo
+                  optio.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <i class="fa fa-angle-double-right"></i>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, voluptas nisi. Quibusdam, illo
+                  optio.
+                </p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="controls">
+            <div class="icon">
+              <img src="./static/google-play.png" alt="" srcset="">
+            </div>
+            <div class="icon">
+              <img src="./static/app-store.png" alt="" srcset="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+
+
+
+  <section class="services" id="services">
+    <div class="container">
+      <div class="heading">
+        <h2 class="title   scroll-b">
+          Our Services
+        </h2>
+        <p class="desc   scroll-t">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi ad velit consequuntur cupiditate officiis!
+        </p>
+      </div>
+      <div class="items">
+
+        <div class="item   scroll-l">
+          <div class="image">
+            <img src="./static/service-1.jpg" alt="" srcset="">
+          </div>
+          <div class="details">
+            <h3 class="title">Cruise Ticket</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae reprehenderit, commodi laudantium eos
+              molestiae sequi?lit esse!
+            </p>
+            <button class="btn">See all</button>
+          </div>
+        </div>
+
+        <div class="item   scroll-l">
+          <div class="image">
+            <img src="./static/service-2.jpg" alt="" srcset="">
+          </div>
+          <div class="details">
+            <h3 class="title">Car Rent</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae reprehenderit, commodi laudantium eos
+              molestiae sequi?lit esse!
+            </p>
+            <button class="btn">See all</button>
+          </div>
+        </div>
+
+
+        <div class="item   scroll-r">
+          <div class="image">
+            <img src="./static/service-3.jpg" alt="" srcset="">
+          </div>
+          <div class="details">
+            <h3 class="title">Air Ticket</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae reprehenderit, commodi laudantium eos
+              molestiae sequi?lit esse!
+            </p>
+            <button class="btn">See all</button>
+          </div>
+        </div>
+
+        <div class="item   scroll-r">
+          <div class="image">
+            <img src="./static/service-4.jpg" alt="" srcset="">
+          </div>
+          <div class="details">
+            <h3 class="title">Hotel Booking</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae reprehenderit, commodi laudantium eos
+              molestiae sequi?lit esse!
+            </p>
+            <button class="btn">See all</button>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+
+
+  </section>
+
+
+
+
+  <section class="reviews" id="reviews">
+    <div class="container">
+      <div class="heading">
+        <h2 class="title   scroll-b">
+          Latests Reviews
+        </h2>
+        <p class="desc   scroll-b">
+          Our Clients What's Says:
+        </p>
+      </div>
+      <div class="items">
+
+        <div class="item   scroll-l">
+          <div class="image">
+            <img src="./static/client-1.jpg" alt="" srcset="">
+          </div>
+          <div class="details">
+            <h3 class="username">Tom Hankiz</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae reprehenderit, commodi laudantium eos
+              molestiae sequi?lit esse!
+            </p>
+            <div class="stars">
+              <div class="icon active"><i class="fa fa-star"></i></div>
+              <div class="icon active"><i class="fa fa-star"></i></div>
+              <div class="icon active"><i class="fa fa-star"></i></div>
+              <div class="icon active"><i class="fa fa-star"></i></div>
+              <div class="icon "><i class="fa fa-star"></i></div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="item   scroll-r">
+          <div class="image">
+            <img src="./static/client-2.jpg" alt="" srcset="">
+          </div>
+          <div class="details">
+            <h3 class="username">Adam Canary</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae reprehenderit, commodi laudantium eos
+              molestiae sequi?lit esse!
+            </p>
+            <div class="stars">
+              <div class="icon active"><i class="fa fa-star"></i></div>
+              <div class="icon active"><i class="fa fa-star"></i></div>
+              <div class="icon active"><i class="fa fa-star"></i></div>
+              <div class="icon active"><i class="fa fa-star"></i></div>
+              <div class="icon "><i class="fa fa-star"></i></div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="item   scroll-r">
+          <div class="image">
+            <img src="./static/client-3.png" alt="" srcset="">
+          </div>
+          <div class="details">
+            <h3 class="username">Tom Hankiz</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae reprehenderit, commodi laudantium eos
+              molestiae sequi?lit esse!
+            </p>
+            <div class="stars">
+              <div class="icon active"><i class="fa fa-star"></i></div>
+              <div class="icon active"><i class="fa fa-star"></i></div>
+              <div class="icon active"><i class="fa fa-star"></i></div>
+              <div class="icon active"><i class="fa fa-star"></i></div>
+              <div class="icon "><i class="fa fa-star"></i></div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="item   scroll-r">
+          <div class="image">
+            <img src="./static/client-4.png" alt="" srcset="">
+          </div>
+          <div class="details">
+            <h3 class="username">Tom Hankiz</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae reprehenderit, commodi laudantium eos
+              molestiae sequi?lit esse!
+            </p>
+            <div class="stars">
+              <div class="icon active"><i class="fa fa-star"></i></div>
+              <div class="icon active"><i class="fa fa-star"></i></div>
+              <div class="icon active"><i class="fa fa-star"></i></div>
+              <div class="icon active"><i class="fa fa-star"></i></div>
+              <div class="icon "><i class="fa fa-star"></i></div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+
+  </section>
+
+
+  <section class="contact" id="contact">
+    <div class="container">
+
+      <div class="items">
+        <div class="item   scroll-t">
+          <div class="heading">
+            <h2 class="title">Contact With Us</h2>
+            <p class="desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic eveniet cupiditate voluptate voluptatem
+              repudiandae corrupti totam.
+            </p>
+            <div class="socials">
+              <a href="#" class="s-link"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="s-link"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="s-link"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="s-link"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" class="s-link"><i class="fa fa-heart"></i></a>
+
+            </div>
+          </div>
+        </div>
+        <div class="item   scroll-b">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10169245.332449624!2d-19.645046149999974!3d51.5182443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b2a3fbb08a5%3A0xa0d599016699b7ff!2sTravel%20Center!5e0!3m2!1sfr!2suk!4v1704819178119!5m2!1sfr!2suk"
+            height="450" style="border:0;" class="map" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="items">
+        <div class="item   scroll-t">
+          <div class="head">
+            <div class="logo">
+              <img src="./static/logo.png" height="30" alt="" srcset="">
+              <span>Blue <strong>Flight</strong></span>
+            </div>
+          </div>
+          <div class="body">
+            <div class="desc">
+              <p>
+                AIRBUS
+              </p>
+              <p class="subtitle">
+                We do the right to get best offer to you ,best and cheap flight,let us to know what you need exactly
+                that's
+                best
+                chalange for us
+              </p>
+
+            </div>
+          </div>
+        </div>
+        <div class="item   scroll-t">
+          <div class="head">
+            <h3>Quick Links</h3>
+
+          </div>
+          <div class="body">
+            <ul class="links">
+              <li><a href="#home" class="link">home</a></li>
+              <li><a href="#service" class="link">services</a></li>
+              <li><a href="#about" class="link">about</a></li>
+              <li><a href="#contact" class="link">contact</a></li>
+              <li><a href="#reviews" class="link">reviews</a></li>
+
+            </ul>
+          </div>
+        </div>
+
+        <div class="item   scroll-t">
+          <div class="head">
+            <h3>Contact Us</h3>
+
+          </div>
+          <div class="body">
+            <ul class="links">
+              <li>+32 5453 6443 30</li>
+              <li>+32 5453 6443 31</li>
+              <li>contactus@blueflight.com</li>
+              <li>AB1 Blue Sreet London, Uk</li>
+
+            </ul>
+          </div>
+        </div>
+        <div class="item   scroll-t">
+          <div class="head">
+            <h3>Subscribe Us</h3>
+
+          </div>
+          <div class="body">
+            <form action="" class="form">
+              <p>
+                best promotion comming from our email
+              </p>
+              <div class="box">
+                <input type="email" placeholder="email...">
+                <button class="btn">subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+       
+      </div>
+      <div class="rights   scroll-b">
+        <p>All Reserved By <a href="#">itcode</a> | 1990-2024</p>
+      </div>
+  </footer>
+<script src="https://unpkg.com/scrollreveal"></script>
+<script src="./static/main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="./static/index.js"></script>
+
+</body>
+
+</html>
